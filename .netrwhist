@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/gabriele/cosechesimuovono/turn'
+let g:netrw_dirhist_2='/home/gabriele/Pesatura_Arnie/logbook'
+let g:netrw_dirhist_3='/home/gabriele/RG_Pesando_esercizi/source'
+let g:netrw_dirhist_4='/home/gabriele/Pesatura_Arnie/logbook'
+let g:netrw_dirhist_5='/home/gabriele/Pesatura_Arnie/analisi_dati'
