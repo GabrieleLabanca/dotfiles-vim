@@ -8,7 +8,10 @@ if exists("b:current_syntax")
   finish
 endif
 
+
 syn match title  "\[.*\]"
+syn match defin  "\\\\.*\\\\"
+syn match comm   "\/\/.*\/\/"
 syn match check_ "\[\D\]"
 syn match checkX "\[X\]"
 syn match checkO "\[O\]"
@@ -17,7 +20,11 @@ syn match marker "\[!\]"
 
 
 let b:current_syntax = "chk"
+" Todo Comment Statement Type PreProc Constant
 
+hi def link defin  Type
+hi def link comm   Comment
+hi def link header Constant
 hi def link checkX Type
 hi def link checkO Todo 
 hi def link check_ Statement
