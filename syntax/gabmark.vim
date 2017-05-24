@@ -8,6 +8,9 @@ if exists("b:current_syntax")
   finish
 endif
 
+syn keyword basicHigh TODO
+syn keyword basicBull _
+
 
 syn match title  "\[.*\]"
 syn match defin  "\\\\.*\\\\"
@@ -17,10 +20,14 @@ syn match checkX "\[X\]"
 syn match checkO "\[O\]"
 syn match marker "\[!\]"
 
+syn region comm start='\/\/' end='\/\/' 
 
 
 let b:current_syntax = "chk"
 " Todo Comment Statement Type PreProc Constant
+
+hi def link basicHigh Todo
+hi def link basicBull Underlined
 
 hi def link defin  Type
 hi def link comm   Comment
