@@ -50,3 +50,14 @@ set nobackup
 " press F4 to fix indentation in whole file; overwrites marker 'q' position
 noremap <F4> mqggVG=`qzz
 inoremap <F4> <Esc>mqggVG=`qzza
+
+" move with Ctrl+arrow between split buffers
+nnoremap <silent> <C-Right> <c-w>l
+nnoremap <silent> <C-Left> <c-w>h
+nnoremap <silent> <C-Up> <c-w>k
+nnoremap <silent> <C-Down> <c-w>j
+nnoremap <silent> <C-l> <c-w>l
+nnoremap <silent> <C-h> <c-w>h
+nnoremap <silent> <C-k> <c-w>k
+nnoremap <silent> <C-j> <c-w>j
+
